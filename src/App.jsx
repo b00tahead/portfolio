@@ -5,41 +5,43 @@ import Project from "./Project";
 import Section from "./Section";
 
 export default function Home() {
-  const year = new Date().getFullYear();
-
   return (
     <>
       <main className="container antialiased px-8">
         <h1 className="text-4xl font-bold tracking-wide py-10">sm.</h1>
 
         <Section title="Scott May">
-          <p>Frontend Developer</p>
+          <p>UX Engineer</p>
         </Section>
 
         <Section title="About">
           <p>
-            As a frontend developer at UK HealthCare, I have several years of
-            experience in building and deploying single-page applications and
-            websites using React and WordPress, as well as creating standardized
-            design library components and architecture for React applications.
+            Over the last decade, I have worked anywhere from a full-stack PHP
+            developer to an interactive designer for multi-touch software to a
+            frontend developer. Throughout all my jobs the one role that I
+            consistently fill is that of a UX designer/engineer. My primary
+            focus is always centered around providing the best experiences
+            possible for both our customers who use our applications and the
+            developers that use our tools to build those applications. I have
+            worked for global tech companies, SaaS companies, higher education,
+            and currently healthcare.
           </p>
 
           <p>
-            My core competencies include design systems, web development, UX,
-            and Azure. I am passionate about creating user-centric and
-            accessible web solutions that enhance the health care experience for
-            patients, providers, and staff. I also enjoy leading and
-            collaborating with an internal team of developers and designers, and
-            I am always eager to learn new technologies and best practices in
-            the field of UX engineering.
+            In my current role, I act as the team lead for our frontend
+            development team. In addition to working on multiple React
+            applications, I also lead the work on redesigning our design system
+            and component library. Other responsibilities include product
+            management, the occasional WordPress site/plugin, QA/testing, and
+            anywhere else my team needs me.
           </p>
         </Section>
 
         <Section title="Work">
           <p>
             I have worked in several different fields of web development and
-            design over the last decade. Here&rsquo;s a brief history of work
-            for the last few years:
+            design over the last decade. Here is a brief history of work for the
+            last few years:
           </p>
           <List>
             <PastJob employer="UK HealthCare" position="Frontend Developer" />
@@ -65,13 +67,13 @@ export default function Home() {
 
         <Section title="Skills">
           <p>
-            I&rsquo;ve picked up a few tricks over the years and feel pretty
+            I have picked up a few tricks over the years and feel pretty
             confident with the following tools and technologies:
           </p>
           <List>
-            <li>JavaScript, React, Node.js</li>
             <li>Design Systems, UI/UX, Interaction Design</li>
             <li>Figma, Adobe XD</li>
+            <li>JavaScript, React, Node.js</li>
             <li>PHP, WordPress, Drupal</li>
             <li>Microsoft Azure</li>
           </List>
@@ -79,10 +81,13 @@ export default function Home() {
 
         <Section title="Projects">
           <p>
-            Here&rsquo;s a list of some of my favorite projects I&rsquo;ve
-            worked on:
+            Here is a list of some of my favorite projects I have worked on:
           </p>
           <List>
+            <Project
+              title="Latest Portfolio"
+              link="https://github.com/b00tahead/projects/blob/master/UXPortfolio.pdf"
+            />
             <Project
               title="A&S Voices"
               link="https://github.com/b00tahead/projects/tree/master/CoAS/as_voices"
@@ -112,17 +117,18 @@ export default function Home() {
 
         <Section title="Interests">
           <p>
-            When I&rsquo;m not working you can usually catch me in the gym,
-            strumming my guitar, or roaming the park with my {year - 2020} year
-            old German Shepherd, Remi.
+            Outside of work, I love to work on various projects using Python,
+            JS/TS, PHP, and Go. Aside from programming, I enjoy playing guitar,
+            going for runs, and hanging out with my beautiful wife and our sweet
+            German Shepherd, Remi.
           </p>
         </Section>
 
         <Section title="Contact">
           <p>
             Feel free to send me an{" "}
-            <Link href="mailto:smay44@gmail.com">email</Link> if you&rsquo;d
-            like to get in touch!
+            <Link href="mailto:smay44@gmail.com">email</Link> if you would like
+            to get in touch!
           </p>
         </Section>
       </main>
