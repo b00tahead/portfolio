@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 export default function List({ children }) {
-  return <ul className="list-disc list-inside">{children}</ul>;
+  return <ul className="list-disc list-outside ml-3">{children}</ul>;
 }
 
 List.propTypes = {
