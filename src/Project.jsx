@@ -1,16 +1,21 @@
 import PropTypes from "prop-types";
 
-import Link from "./Link";
-
-export default function Project({ title, link }) {
+export default function Project({ projectName, projectLink, skill, where }) {
   return (
-    <li>
-      <Link href={link}>{title}</Link>
-    </li>
+    <div>
+      <h3 className="text-white text-2xl">
+        <a href={projectLink}>{projectName}</a>
+      </h3>
+      <h4 className="text-base text-slate-400">
+        {skill} · {where}
+      </h4>
+    </div>
   );
 }
 
 Project.propTypes = {
-  title: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  projectName: PropTypes.string.isRequired,
+  projectLink: PropTypes.string.isRequired,
+  skill: PropTypes.string.isRequired,
+  where: PropTypes.string.isRequired,
 };

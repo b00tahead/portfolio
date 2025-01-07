@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function Link({ href, children }) {
   return (
-    <a className="underline hover:text-emerald-300" href={href}>
+    <a className="text-emerald-400" href={href}>
       {children}
     </a>
   );
